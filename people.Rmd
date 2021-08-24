@@ -88,28 +88,13 @@ Mutliomic data integration and tumor heterogeneity quantification
 Postdoc in biostatistics
 
 Contact: slim.karkar[at]univ-grenoble-alpes.fr
-</div>
 
-<div class="column-left">
-```{r, out.width = "80px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("pictures/tulip.png")
-``` 
-</div>
 
-<div class="column-right">
-
-**Fabien Quinquis**
-
-Genetic regulation of tumor heterogeneity
-
-Master 2 internship
-
-Contact: fabien.quimquis[at]univ-grenoble-alpes.fr
-
-</div>
 
 
 **ALUMNI**
+
+Fabien Quinquis (2021), Master student, Genetic regulation of tumor heterogeneity
 
 Alexis Arnaud (2020), Engineer, data challenge (financed by the Data institute of grenoble)
 
