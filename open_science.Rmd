@@ -14,7 +14,6 @@ This program targets the current critical need to evaluate novel computational m
 
 **Please visit our website dedicate to cancer heterogenity data challenges and benchmarking : [Cancer Heterogeneity](https://cancer-heterogeneity.github.io/)**
 
-### European coordinators 
 
 ![](pictures/cometh_network.png)
 
@@ -26,13 +25,9 @@ This program targets the current critical need to evaluate novel computational m
 We also organize data challenges within master programs at University Grenoble Alpes. 
 See examples below.
 
-### 2019: Linear models
+**Linear models** : [expred challenge](https://competitions.codalab.org/competitions/22422)
 
-[expred challenge](https://competitions.codalab.org/competitions/22422)
-
-### 2018: Logistic regression
-
-[survival challenge](https://competitions.codalab.org/competitions/21360)
+**Logistic regression** : [survival challenge](https://competitions.codalab.org/competitions/21360)
 
 
 ![](pictures/open_science.png)

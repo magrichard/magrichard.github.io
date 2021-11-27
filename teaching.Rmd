@@ -12,15 +12,15 @@ output:
 
 ## Statistics
 
-### 2018-2019
+**2018-current**
 
 UGA, master SSD
 
-Linear Models: [please find here the github repository of the course](https://github.com/magrichard/cours_modlin_M1) 
+Linear Models and Generalized Linear Models: [please find here the github repository of the course](https://github.com/magrichard/cours_modlin_M1) 
 
 Logistic regression: [please find here the github repository of the course](https://github.com/magrichard/cours_reglog) 
 
-### 2016-2017 
+**2016-2017** 
 
 ENSIMAG, grenoble. Statistics (Master)
 
@@ -38,11 +38,11 @@ R studio and git (2018) [see here](https://privefl.github.io/R-presentation/rstu
 
 ## Biology
 
-### 2016-2017 
+**2016-2017** 
 
 UGA, grenoble. Genetics (Licence)
 
-### 2015-2016
+**2015-2016**
 
 UCB, Lyon. Introduction to research work in genomic (Master)
 
@@ -50,7 +50,7 @@ UCB, Lyon. Introduction to research work in genomic (Master)
 
 ENS, Lyon. Practical course of genetics in nematodes (Licence)
 
-### 2008-2011
+**2008-2011**
 
 2008-11. UPMC, Paris. Genetics and Cell biology (Licence)
 

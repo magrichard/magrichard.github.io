@@ -3,12 +3,12 @@ title: "Genetic and Epigenetic (de)regulation in Cancer"
 output:
   html_document:
     includes:
-      in_header: cover.html
+      after_body: cover.html
 ---
 
-Our group is interested in developing computational methods for a better understanding of genetic and epigenetic variations in the context of cancer.
+Our group is interested in developing computational methods for a better understanding of the diversity of genetic and epigenetic variations in the context of cancer.
 
-We are located at [TIMC-IMAG](https://www-timc.imag.fr/) in the [BCM](https://www-timc.imag.fr/BCM) team, CNRS, Université Grenoble Alpes.
+We are located at [TIMC](https://www.timc.fr/) in the [MAGe](https://www.timc.fr/en/mage) team, CNRS, Université Grenoble Alpes.
 
 [Research projects](research.html)
 
@@ -20,8 +20,8 @@ We are located at [TIMC-IMAG](https://www-timc.imag.fr/) in the [BCM](https://ww
 
 [Teaching](teaching.html)
 
-Header Pictures: [Harry Gruyaert](https://www.ecosia.org/images?c=fr&p=13&q=harry+gruyaert#id=_)©
-
 ![](pictures/fundings.png)
+
+Footer and header Pictures: [Harry Gruyaert](https://www.ecosia.org/images?c=fr&p=13&q=harry+gruyaert#id=_)©
 
 

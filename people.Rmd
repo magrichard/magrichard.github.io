@@ -6,93 +6,42 @@ output:
       in_header: header.html
 ---
 
-<style>
-.column-left{
-  float: left;
-  width: 20%;
-  text-align: right;
-}
-.column-right{
-  float: left;
-  width: 80%;
-  text-align: left;
-}
-</style>
+**CURRENT MEMBERS**
 
-<div class="column-left">
-```{r, out.width = "100px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("pictures/mag_cv.png")
-``` 
-</div>
+<img src="pictures/labpic2.jpg" align="middle" height="150" margin="0 auto" />
+<img src="pictures/mrichard_picture_light.png" alt="Magali" align="middle" height="150" margin="0 auto" />
+<img src="pictures/elise.jpg" align="middle" height="150" margin="0 auto" />
+<img src="pictures/florence.jpg" align="middle" height="150" margin="0 auto" />
+<img src="pictures/labpic1.jpg" align="middle" height="150" margin="0 auto" />
 
-<div class="column-right">
-**Magali Richard** (PI), for more details, see my [CV](CV.pdf).
+Magali Richard **(PI)** :
 
-Computational biologist specialized in experimental and theoritical genetics. 
+- Computational biologist specialized in experimental and theoritical genetics 
+- CNRS research associate (CRCN) 
+- Contact: magali.richard[at]univ-grenoble-alpes.fr
 
-CNRS research associate (CRCN), computational biologist
+Elise Amblard :
 
-Contact: magali.richard[at]univ-grenoble-alpes.fr
+- Mutliomic data integration and tumor heterogeneity quantification 
+- Postdoc in biostatistics 
+- Contact: elise.amblard[at]univ-grenoble-alpes.fr
 
-</div>
+Florence Pittion : 
 
-<div class="column-left">
-```{r, out.width = "90px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("pictures/clementine.png")
-``` 
-</div>
+- Mediation analysis of tumor heterogeneity 
+- PhD student in biostatistics 
+- Contact: florence.pittion[at]univ-grenoble-alpes.fr
 
-
-
-<div class="column-right">
-**Clémentine Decamps** (co-direction with Daniel Jost, LBMC, ENS Lyon)
-
-Computational biology of cancer epigenetics
-
-PhD student in bioinformatics
-
-Contact: clementine.decamps[at]univ-grenoble-alpes.fr
-</div>
-
-<div class="column-left">
-```{r, out.width = "80px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("pictures/pivoine.png")
-``` 
-</div>
-
-
-
-<div class="column-right">
-**Yasmina Kermezli** (financed by the EIT Health)
-
-Data challenge & Benchmarking (HADACA and COMETH EIT Health projects)
-
-Postdoc in bioinformatics
-
-Contact: yasmina.kermezli[at]univ-grenoble-alpes.fr
-</div>
-
-
-
-<div class="column-left">
-```{r, out.width = "80px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("pictures/slim.png")
-``` 
-</div>
-
-<div class="column-right">
-**Slim Karkar** (financed by the MIAI institute), 
-
-Mutliomic data integration and tumor heterogeneity quantification 
-
-Postdoc in biostatistics
-
-Contact: slim.karkar[at]univ-grenoble-alpes.fr
-
-
+---------------------------------
 
 
 **ALUMNI**
+
+Clémentine Décamps (2018-2021), PhD, Computational biology of cancer epigenetics
+
+Slim Karkar (2020-2021), Postdoc, Multiomic data integration and tumor heterogeneity quantification 
+
+Yasmina Kermezly (2020-2021), Postdoc, Single-cell based tumor heterogeneity deconvolution
 
 Fabien Quinquis (2021), Master student, Genetic regulation of tumor heterogeneity
 
