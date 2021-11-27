@@ -11,31 +11,35 @@ output:
 
 ## Research articles
 
-[10] Clémentine Decamps, Alexis Arnaud, Florent Petitprez, Mira Ayadi, Aurélia Baurès, Lucile Armenoult, HADACA consortium, Rémy Nicolle, Richard Tomasini, Aurélien de Reyniès, Jérôme Cros, Yuna Blum, **Magali Richard**. (2020) DECONbench: a benchmarking platform dedicated to deconvolution methods for tumor heterogeneity quantification. BioRxiv [Click](https://doi.org/10.1101/2020.06.06.131482 )
+Xu, Z., Zhao, H., Tu, W., Escalera, S., Richard, M., Guyon, I (2021) Codabench: Flexible, Easy-to-Use and Reproducible Benchmarking for Everyone. ArXiv [Click](https://arxiv.org/abs/2110.05802)
 
-[9] **Richard**, M., Decamps, C., Chuffart, F., Brambilla, E., Rousseaux, S., Khochbin, S., Jost, D. (2020) PenDA, a rank-based method for Personalized Differential Analysis: application to lung cancer. PLoS Comput Biol 16, e1007869 [Click](https://doi.org/10.1371/journal.pcbi.1007869) <a href="penda_data.zip" download> Download reference datasets </a>
+Clémentine Decamps, Alexis Arnaud, Florent Petitprez, Mira Ayadi, Aurélia Baurès, Lucile Armenoult, HADACA consortium, Rémy Nicolle, Richard Tomasini, Aurélien de Reyniès, Jérôme Cros, Yuna Blum, **Magali Richard**. (2021) DECONbench: a benchmarking platform dedicated to deconvolution methods for tumor heterogeneity quantification. BMC Bioinformatics 21, 1–15 [Click](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04381-4 )
 
-[8] Clementine Decamps, Florian Privé, Raphael Bacher, Daniel Jost, Arthur Waguet, HADACA consortium, Eugene Andres Houseman, Eugene Lurie, Pavlo Lutsik, Aleksandar Milosavljevic, Michael Scherer, Michael G.B. Blum, **Magali Richard** (2020). Guidelines for cell-type heterogeneity quantification based on a comparative analysis of reference-free DNA methylation deconvolution software. BMC Bioinformatics 21, 1–15 [Click](https://doi.org/10.1186/s12859-019-3307-2)
+ **Richard**, M., Decamps, C., Chuffart, F., Brambilla, E., Rousseaux, S., Khochbin, S., Jost, D. (2020) PenDA, a rank-based method for Personalized Differential Analysis: application to lung cancer. PLoS Comput Biol 16, e1007869 [Click](https://doi.org/10.1371/journal.pcbi.1007869) <a href="penda_data.zip" download> Download reference datasets </a>
 
-[7] D'Alessandro M, **Richard M,** Stigloher C, Gache V, Boulin T, Richmond JE, Bessereau JL. (2018) CRELD1 is an evolutionarily-conserved maturational enhancer of ionotropic acetylcholine receptors. Elife. 2018 Nov 7;7. pii: e39649. 
+Clementine Decamps, Florian Privé, Raphael Bacher, Daniel Jost, Arthur Waguet, HADACA consortium, Eugene Andres Houseman, Eugene Lurie, Pavlo Lutsik, Aleksandar Milosavljevic, Michael Scherer, Michael G.B. Blum, **Magali Richard** (2020). Guidelines for cell-type heterogeneity quantification based on a comparative analysis of reference-free DNA methylation deconvolution software. BMC Bioinformatics 21, 1–15 [Click](https://doi.org/10.1186/s12859-019-3307-2)
+
+D'Alessandro M, **Richard M,** Stigloher C, Gache V, Boulin T, Richmond JE, Bessereau JL. (2018) CRELD1 is an evolutionarily-conserved maturational enhancer of ionotropic acetylcholine receptors. Elife. 2018 Nov 7;7. pii: e39649. 
 [Click](https://elifesciences.org/articles/39649)
 
-[6] Salignon #, J., **Richard #**, M., Fulcrand, E., Duplus-Bottin, H. & Yvert, G. (2018) Genomics of cellular proliferation in periodic environmental fluctuations. Mol Syst Biol. 2018 Mar 5;14(3):e7823. [Click](http://msb.embopress.org.insb.bib.cnrs.fr/content/14/3/e7823.long)
+Salignon #, J., **Richard #**, M., Fulcrand, E., Duplus-Bottin, H. & Yvert, G. (2018) Genomics of cellular proliferation in periodic environmental fluctuations. Mol Syst Biol. 2018 Mar 5;14(3):e7823. [Click](http://msb.embopress.org.insb.bib.cnrs.fr/content/14/3/e7823.long)
 
-[5] **Richard, M.***, Chuffart, F, Duplus-Bottin, H., Pouyet, F., Spichty, M., Fulcrand, E., Entrevan, M., Barthelaix, A., Springer, M., Jost, D., and G. Yvert , G. (2018). Assigning function to natural allelic variation via dynamic modeling of gene network induction. Molecular Systems Biology, 14, e7803. [Click](https://doi.org/10.15252/msb.20177803) or [PDF](msbgal3.full.pdf)
+**Richard, M.***, Chuffart, F, Duplus-Bottin, H., Pouyet, F., Spichty, M., Fulcrand, E., Entrevan, M., Barthelaix, A., Springer, M., Jost, D., and G. Yvert , G. (2018). Assigning function to natural allelic variation via dynamic modeling of gene network induction. Molecular Systems Biology, 14, e7803. [Click](https://doi.org/10.15252/msb.20177803) or [PDF](msbgal3.full.pdf)
 
-[4] Chuffart, F., **Richard, M.**, Jost, D., Burny, C., Duplus-Bottin, H., Ohya, Y., & Yvert, G. (2016). Exploiting Single-Cell Quantitative Data to Map Genetic Variants Having Probabilistic Effects. PLoS Genetics, 12(8), e1006213. [Click](http://doi.org/10.1371/journal.pgen.1006213) or [PDF](PLoS Genetics 2016 Chuffart.pdf)
+Chuffart, F., **Richard, M.**, Jost, D., Burny, C., Duplus-Bottin, H., Ohya, Y., & Yvert, G. (2016). Exploiting Single-Cell Quantitative Data to Map Genetic Variants Having Probabilistic Effects. PLoS Genetics, 12(8), e1006213. [Click](http://doi.org/10.1371/journal.pgen.1006213) or [PDF](PLoS Genetics 2016 Chuffart.pdf)
 
-[3] **Richard, M.** & Yvert, G. L. How does evolution tune biological noise? Front. Genet. 5, 1011 (2014). [Click](http://doi.org/10.3389/fgene.2014.00374) or [PDF](frontiers.pdf)
+**Richard, M.** & Yvert, G. L. How does evolution tune biological noise? Front. Genet. 5, 1011 (2014). [Click](http://doi.org/10.3389/fgene.2014.00374) or [PDF](frontiers.pdf)
 
-[2] **Richard, M.**, Boulin, T., Robert, V. J. P., Richmond, J. E., & Bessereau, J.-L. (2013). Biosynthesis of ionotropic acetylcholine receptors requires the evolutionarily conserved ER membrane complex. Proceedings of the National Academy of Sciences of the United States of America, 110(11), E1055???63. [Click](http://doi.org/10.1073/pnas.1216154110) or [PDF](pnas.pdf)
+**Richard, M.**, Boulin, T., Robert, V. J. P., Richmond, J. E., & Bessereau, J.-L. (2013). Biosynthesis of ionotropic acetylcholine receptors requires the evolutionarily conserved ER membrane complex. Proceedings of the National Academy of Sciences of the United States of America, 110(11), E1055???63. [Click](http://doi.org/10.1073/pnas.1216154110) or [PDF](pnas.pdf)
 
-[1] Legent, K., Steinhauer, J., **Richard, M.**, & Treisman, J. E. (2012). A screen for X-linked mutations affecting Drosophila photoreceptor differentiation identifies Casein kinase 1?? as an essential negative regulator of wingless signaling. Genetics, 190(2), 601???616. [Click](http://doi.org/10.1534/genetics.111.133827) or [PDF](genetics.pdf)
+Legent, K., Steinhauer, J., **Richard, M.**, & Treisman, J. E. (2012). A screen for X-linked mutations affecting Drosophila photoreceptor differentiation identifies Casein kinase 1?? as an essential negative regulator of wingless signaling. Genetics, 190(2), 601???616. [Click](http://doi.org/10.1534/genetics.111.133827) or [PDF](genetics.pdf)
 
 (#): joint first authors
 
 
 ## R packages
+
+[gedepir](https://github.com/bcm-uga/gedepir) Gene Expression DEconvoluation PIpeline in R
 
 [medepir](https://github.com/bcm-uga/medepir) MEthylation DEconvoluation PIpeline in R
 
