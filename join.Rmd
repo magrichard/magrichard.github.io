@@ -11,19 +11,3 @@ output:
 
 Postdoc and students from a wide range of backgrounds including computer science, statistics, bioinformatics and quantitative biology, and interested in computational genetics, are encouraged to contact Magali Richard to discuss possibilities of internships, PhD thesis and postdoc fellowships.
 
-<<<<<<< HEAD
-=======
-***
-
-An 2 years postdoc position in bioinformatics/biostatistics is currently avalaible in our Group (starting beginning 2022) [clic](https://bit.ly/3D01Xmp).			
-
-***
-
-
-You are welcome to join:
-
-- our weekly BCM team seminar. [Website](https://www-timc.imag.fr/bcm-extended-seminars)
-
-- our monthly R working sessions. [Website](https://r-in-grenoble.github.io/index.html)
-
->>>>>>> f0a42fb750ae1ddd196a684c7d64dea9cb23aaee
