@@ -13,7 +13,7 @@
 
 <title>People</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25.1/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 <div><img src="pictures/header.png" width="100%" align="center"></div>
 
 <style type="text/css">
@@ -144,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -335,33 +332,51 @@ $(document).ready(function () {
 
 
 <p><strong>CURRENT MEMBERS</strong></p>
-<p><img src="pictures/labpic2.jpg" align="middle" height="150" margin="0 auto" />
-<img src="pictures/mrichard_picture_light.png" alt="Magali" align="middle" height="150" margin="0 auto" />
+<p><img src="pictures/mrichard_picture_light.png" alt="Magali" align="middle" height="150" margin="0 auto" />
 <img src="pictures/elise.jpg" align="middle" height="150" margin="0 auto" />
 <img src="pictures/florence.jpg" align="middle" height="150" margin="0 auto" />
-<img src="pictures/labpic1.jpg" align="middle" height="150" margin="0 auto" /></p>
-<p>Magali Richard <strong>(PI)</strong> :</p>
+<img src="pictures/hugo_barbot.jpg" align="middle" height="150" margin="0 auto" />
+<img src="pictures/lucie_lamothe.png" align="middle" height="150" margin="0 auto" /></p>
+<p><strong>Magali Richard (PI)</strong> :</p>
 <ul>
 <li>Computational biologist specialized in experimental and theoritical
 genetics</li>
 <li>CNRS research associate (CRCN)</li>
 <li>Contact: magali.richard[at]univ-grenoble-alpes.fr</li>
 </ul>
-<p>Elise Amblard :</p>
+<p><strong>Elise Amblard</strong> :</p>
 <ul>
 <li>Mutliomic data integration and tumor heterogeneity
 quantification</li>
 <li>Postdoc in biostatistics</li>
 <li>Contact: elise.amblard[at]univ-grenoble-alpes.fr</li>
 </ul>
-<p>Florence Pittion :</p>
+<p><strong>Florence Pittion</strong> :</p>
 <ul>
 <li>Mediation analysis of tumor heterogeneity</li>
 <li>PhD student in biostatistics</li>
 <li>Contact: florence.pittion[at]univ-grenoble-alpes.fr</li>
 </ul>
+<p><strong>Hugo Barbot</strong> :</p>
+<ul>
+<li>Statistical inférence of cellular heterogeneity using multi-omic
+prior biological knowledge<br />
+</li>
+<li>PhD student in statistics, co-supervised by Yuna Blum (IGDR, Rennes)
+and David Causeur (IRMAR, Rennes)</li>
+<li>Contact: hugo.barbot[at]univ-grenoble-alpes.fr</li>
+</ul>
+<p><strong>Lucie Lamothe</strong> :</p>
+<ul>
+<li>Single-cell based deconvolution, computational lab managment, data
+challenge organisation<br />
+</li>
+<li>IR in bioinformatics</li>
+<li>Contact: lucie.lamothe[at]univ-grenoble-alpes.fr</li>
+</ul>
 <hr />
 <p><strong>ALUMNI</strong></p>
+<p>Vadim Bertrand (2023), Master student, Multiomic data integration</p>
 <p>Clémentine Décamps (2018-2021), PhD, Computational biology of cancer
 epigenetics</p>
 <p>Slim Karkar (2020-2021), Postdoc, Multiomic data integration and
