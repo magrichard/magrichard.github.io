@@ -39,12 +39,26 @@ output:
 - Statistical inférence of cellular heterogeneity using multi-omic prior biological knowledge  
 - PhD student in statistics, co-supervised by Yuna Blum (IGDR, Rennes) and David Causeur (IRMAR, Rennes)
 - Contact: hugo.barbot[at]univ-grenoble-alpes.fr
+- [Website](https://hugobarbot.github.io/index.html) : 
 
 **Lucie Lamothe** : 
 
 - Single-cell based deconvolution, computational lab managment, data challenge organisation  
 - IR in bioinformatics
 - Contact: lucie.lamothe[at]univ-grenoble-alpes.fr
+
+**Nicolas Homberg** : 
+
+- Data challenge organisation, platform development, project Codabench @UGA  
+- IR in bioinformatics, GRICAD UGA Mesocentre
+- Contact: nicolas.homberg[at]univ-grenoble-alpes.fr
+
+
+**Luis Martín Peña** : 
+
+- Mutliomic data integration and tumor heterogeneity quantification   
+- Intern in bioinformatics
+- Contact: luis.martin-pena[at]univ-grenoble-alpes.fr
 
 ---------------------------------
 
