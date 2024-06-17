@@ -14,7 +14,7 @@ output:
 <img src="pictures/florence.jpg" align="middle" height="150" margin="0 auto" />
 <img src="pictures/hugo_barbot.jpg" align="middle" height="150" margin="0 auto" />
 <img src="pictures/lucie_lamothe.png" align="middle" height="150" margin="0 auto" />
-
+<img src="pictures/nicolas_homberg.jpg " align="middle" height="150" margin="0 auto" />
 
 **Magali Richard (PI)** :
 
@@ -37,9 +37,9 @@ output:
 **Hugo Barbot** : 
 
 - Statistical inférence of cellular heterogeneity using multi-omic prior biological knowledge  
-- PhD student in statistics, co-supervised by Yuna Blum (IGDR, Rennes) and David Causeur (IRMAR, Rennes)
+- PhD student in statistics, co-supervised by Yuna Blum (IGDR, Rennes) and David Causeur (IRMAR, Rennes), part of the PhD network of the [M4DI](https://m4di.univ-amu.fr/) project (PEPR Santé Numérique).
 - Contact: hugo.barbot[at]univ-grenoble-alpes.fr
-- [Website](https://hugobarbot.github.io/index.html) : 
+- [Website](https://hugobarbot.github.io/index.html)  
 
 **Lucie Lamothe** : 
 

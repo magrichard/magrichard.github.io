@@ -13,7 +13,7 @@
 
 <title>Research interests</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 <div><img src="pictures/header.png" width="100%" align="center"></div>
 
 <style type="text/css">
@@ -144,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -352,9 +349,8 @@ $(document).ready(function () {
 }
 </style>
 <hr />
-<div id="cancer-heterogeneity" class="section level1">
-<h1>Cancer heterogeneity</h1>
-<p>main collaborators: Y. Blum, J. Cros</p>
+<div id="tumor-heterogeneity" class="section level2">
+<h2>Tumor heterogeneity</h2>
 <div class="column-right">
 <p><img src="pictures/FIG1.png" width="300px" style="display: block; margin: auto;" /></p>
 </div>
@@ -370,9 +366,48 @@ from tumours, and to provide a novel type of information about
 intra-tumour heterogeneity and cancer virulence.</p>
 <hr />
 </div>
-<div id="epigenetic-regulation-and-variability" class="section level1">
-<h1>(Epi)genetic regulation and variability</h1>
-<p>main collaborators: D. Jost, S. Khochbin, S. Rousseaux</p>
+<div id="multimodal-data-integration" class="section level2">
+<h2>Multimodal data integration</h2>
+<div class="column-right">
+<p><img src="pictures/multi-omic_data_integration.png" width="300px" style="display: block; margin: auto;" /></p>
+</div>
+<p>So far, most statistical methods used for cell deconvolution ignore
+the biological relationships between the molecular features used in the
+models. Our goal is to provide a statistical framework for deconvolution
+including (i) the stochastic dependence across molecular features
+induced by the mutual regulation mechanisms; (ii) the a priori knowledge
+of the topology of multilayer interaction networks; and (iii) the
+similarity between samples that may be induced by controlled
+experimental conditions.</p>
+<p>We expect that using different types of omic data should improve the
+quality of tumor heterogeneity quantification by (i) removing the bias
+specific to each type of data and (ii) better identifying the relevant
+features in both datasets using joint information provided by both data
+types.</p>
+<hr />
+</div>
+<div id="data-challenges-and-benchmarks" class="section level2">
+<h2>Data challenges and Benchmarks</h2>
+<div class="column-right">
+<p><img src="pictures/data_challenge_benchmarks.png" width="300px" style="display: block; margin: auto;" /></p>
+</div>
+<p>Codabench is an open-source, web-based data challenge platform
+primarily utilized by the machine learning community to orchestrate
+public competitions in the field data science analysis. Codabench offers
+the possibily to organize flexible competitions and benchmark, thus
+contributing to the development of advanced methods in data analysis and
+promoting reproducibility of results. In addition, it facilitates
+hands-on learning and fosters collaboration within the scientific
+community.</p>
+<p>We contribute to the development of codabench and organize regular
+data challenge in Health. Our next objective would be to establish a
+federation of Codabench platforms across various academic sites,
+facilitating the sustainable growth of the platform while ensuring the
+capability to archive and retrieve each past competition.</p>
+<hr />
+</div>
+<div id="epigenetic-regulation-and-variability" class="section level2">
+<h2>(Epi)genetic regulation and variability</h2>
 <div class="column-right">
 <p><img src="pictures/penda.png" width="300px" style="display: block; margin: auto;" /></p>
 </div>
