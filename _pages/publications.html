@@ -12,25 +12,48 @@ author_profile: true
 {% include base_path %}
 
 <!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+
+<!-- Sommaire -->
+<div class="timeline-toc">
+  <h2>Table of content</h2>
+  <ul>
+    {% assign publications_by_type = site.publications | group_by: "type" %}
+    {% for type_group in publications_by_type %}
+      <li><a href="#{{ type_group.name | slugify }}">{{ type_group.name }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="timeline">
+  {% assign publications_by_type = site.publications | group_by: "type" %}
+
+  {% for type_group in publications_by_type %}
+    <!-- Affichage du type -->
+    <div class="timeline-type">
+      <h2>{{ type_group.name }}</h2>
+    </div>
+
+    {% assign sorted_posts = type_group.items | sort: "year" | reverse %}
+
+    {% for post in sorted_posts %}
+      <div class="timeline-item">
+        <div class="timeline-circle">
+          <span class="year">{{ post.year }}</span>
+        </div>
+        <div class="timeline-content">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          {% if post.authors %}
+            <p class="publication-authors">{{ post.authors }}</p>
+          {% endif %}
+          {% if post.journal %}
+            <p class="publication-journal">{{ post.journal }}</p>
+          {% endif %}
+          <p class="publication-summary">{{ post.excerpt }}</p>
+          <a href="{{ post.url }}" class="read-more">Read more</a>
+        </div>
+        <div class="timeline-line"></div>
+      </div>
     {% endfor %}
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
+</div>
 

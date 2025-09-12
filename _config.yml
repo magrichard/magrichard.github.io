@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Magali Richard Webpage"
+title                    : "Magali Richard"
 title_separator          : "-"
 name                     : &name "Magali Richard"               # Update this with your name, this is the default if not overridden by a page
 description              : &description "Magali Richard's webpage"   # Update this with a general description of your site, this is the default if not overridden by a page
