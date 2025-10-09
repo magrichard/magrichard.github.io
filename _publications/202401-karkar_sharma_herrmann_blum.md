@@ -1,6 +1,6 @@
 ---
 title: "DECOMICS, a shiny application for unsupervised cell type deconvolution and biological interpretation of bulk omic data"
-authors: "S. Karkar, A. Sharma, C. Herrmann, Y. Blum, M. Richard"
+authors: "S. Karkar, A. Sharma, C. Herrmann, Y. Blum, <b>M. Richard</b>"
 journal: "Bioinformatics Advances"
 collection: publications
 permalink: /publication/202401-karkar_sharma_herrmann_blum

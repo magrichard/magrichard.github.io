@@ -1,6 +1,6 @@
 ---
 title: "Guidelines for cell-type heterogeneity quantification based on a comparative analysis of reference-free DNA methylation deconvolution software"
-authors: " HADACA consortium, C. Decamps, F. Privé, R. Bacher, D. Jost, A. Waguet, E. A. Houseman, E. Lurie, P. Lutsik, A. Milosavljevic, M. Scherer, M. G. B. Blum, M. Richard"
+authors: " HADACA consortium, C. Decamps, F. Privé, R. Bacher, D. Jost, A. Waguet, E. A. Houseman, E. Lurie, P. Lutsik, A. Milosavljevic, M. Scherer, M. G. B. Blum, <b>M. Richard</b>"
 journal: "BMC Bioinformatics"
 collection: publications
 permalink: /publication/202012-{hadaca consortium}_decamps_prive_bacher

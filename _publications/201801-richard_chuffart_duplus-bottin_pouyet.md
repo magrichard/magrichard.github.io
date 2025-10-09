@@ -1,6 +1,6 @@
 ---
 title: "Assigning function to natural allelic variation via dynamic modeling of gene network induction"
-authors: "M. Richard, F. Chuffart, H. Duplus-Bottin, F. Pouyet, M. Spichty, E. Fulcrand, M. Entrevan, A. Barthelaix, M. Springer, D. Jost, G. Yvert"
+authors: "<b>M. Richard</b>, F. Chuffart, H. Duplus-Bottin, F. Pouyet, M. Spichty, E. Fulcrand, M. Entrevan, A. Barthelaix, M. Springer, D. Jost, G. Yvert"
 journal: "Molecular Systems Biology"
 collection: publications
 permalink: /publication/201801-richard_chuffart_duplus-bottin_pouyet

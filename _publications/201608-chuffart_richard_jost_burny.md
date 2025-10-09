@@ -1,6 +1,6 @@
 ---
 title: "Exploiting Single-Cell Quantitative Data to Map Genetic Variants Having Probabilistic Effects"
-authors: "F. Chuffart, M. Richard, D. Jost, C. Burny, H. Duplus-Bottin, Y. Ohya, G. Yvert"
+authors: "F. Chuffart,<b>M. Richard</b>, D. Jost, C. Burny, H. Duplus-Bottin, Y. Ohya, G. Yvert"
 journal: "PLOS Genetics"
 collection: publications
 permalink: /publication/201608-chuffart_richard_jost_burny

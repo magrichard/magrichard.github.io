@@ -1,6 +1,6 @@
 ---
 title: "hdmax2: R package hdmax2 performs high dimension mediation analysis"
-authors: "F. Pittion, M. Richard, O. Francois, B. Jumentier"
+authors: "F. Pittion, <b>M. Richard</b>, O. Francois, B. Jumentier"
 journal: ""
 collection: publications
 permalink: /publication/202407-pittion_richard_francois_jumentier

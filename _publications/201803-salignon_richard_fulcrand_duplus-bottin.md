@@ -1,6 +1,6 @@
 ---
 title: "Genomics of cellular proliferation in periodic environmental fluctuations"
-authors: "J. Salignon, M. Richard, E. Fulcrand, H. Duplus-Bottin, G. Yvert"
+authors: "J. Salignon, <b>M. Richard</b>, E. Fulcrand, H. Duplus-Bottin, G. Yvert"
 journal: "Molecular Systems Biology"
 collection: publications
 permalink: /publication/201803-salignon_richard_fulcrand_duplus-bottin

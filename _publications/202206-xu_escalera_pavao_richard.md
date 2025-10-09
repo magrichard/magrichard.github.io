@@ -1,6 +1,6 @@
 ---
 title: "Codabench: Flexible, easy-to-use, and reproducible meta-benchmark platform"
-authors: "Z. Xu, S. Escalera, A. Pavão, M. Richard, W.-W. Tu, Q. Yao, H. Zhao, I. Guyon"
+authors: "Z. Xu, S. Escalera, A. Pavão, <b>M. Richard</b>, W.-W. Tu, Q. Yao, H. Zhao, I. Guyon"
 journal: "Patterns"
 collection: publications
 permalink: /publication/202206-xu_escalera_pavao_richard

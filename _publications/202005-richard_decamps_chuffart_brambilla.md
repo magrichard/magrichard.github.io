@@ -1,6 +1,6 @@
 ---
 title: "PenDA, a rank-based method for personalized differential analysis: Application to lung cancer"
-authors: "M. Richard, C. Decamps, F. Chuffart, E. Brambilla, S. Rousseaux, S. Khochbin, D. Jost"
+authors: "<b>M. Richard</b>, C. Decamps, F. Chuffart, E. Brambilla, S. Rousseaux, S. Khochbin, D. Jost"
 journal: "PLOS Computational Biology"
 collection: publications
 permalink: /publication/202005-richard_decamps_chuffart_brambilla

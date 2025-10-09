@@ -1,6 +1,6 @@
 ---
 title: "decomics: DEConvolution of OMICS data"
-authors: "S. Karkar, Y. Blum, M. Richard"
+authors: "S. Karkar, Y. Blum, <b>M. Richard</b>"
 journal: ""
 collection: publications
 permalink: /publication/202407-karkar_blum_richard

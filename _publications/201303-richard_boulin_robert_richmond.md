@@ -1,6 +1,6 @@
 ---
 title: "Biosynthesis of ionotropic acetylcholine receptors requires the evolutionarily conserved ER membrane complex"
-authors: "M. Richard, T. Boulin, V. J. P. Robert, J. E. Richmond, J.-L. Bessereau"
+authors: "<b>M. Richard</b>, T. Boulin, V. J. P. Robert, J. E. Richmond, J.-L. Bessereau"
 journal: "Proceedings of the National Academy of Sciences"
 collection: publications
 permalink: /publication/201303-richard_boulin_robert_richmond

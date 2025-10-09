@@ -1,7 +1,7 @@
 ---
 title: "A robust workflow to benchmark deconvolution of multi-omic data"
-authors: "E. Amblard, V. Bertrand, L. M. Pena, S. Karkar, F. Chuffart, M. Ayadi, A. Baures, L. Armenoult, Y. Kermezli, J. Cros, Y. Blum, M. Richard"
-journal: ""
+authors: "E. Amblard, V. Bertrand, L. M. Pena, S. Karkar, F. Chuffart, M. Ayadi, A. Baures, L. Armenoult, Y. Kermezli, J. Cros, Y. Blum, <b>M. Richard</b>"
+journal: "In revision at Genome Biology"
 collection: publications
 permalink: /publication/202411-amblard_bertrand_pena_karkar
 venue: ''

@@ -1,0 +1,73 @@
+/* Publication cards */
+.publication-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.publication-meta {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Filtres */
+.filters {
+  margin-bottom: 30px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.category-list li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.category-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Mise en page de la page d'archive */
+.publication-category {
+  margin-bottom: 40px;
+}
+
+.publication-category h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.publication-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.publication-summary {
+  font-size: 1em;
+  color: #666;
+}

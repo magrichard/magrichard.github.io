@@ -1,6 +1,6 @@
 ---
 title: "How does evolution tune biological noise?"
-authors: "M. Richard, G. Yvert"
+authors: "<b>M. Richard</b>, G. Yvert"
 journal: "Frontiers in Genetics"
 collection: publications
 permalink: /publication/201400-richard_yvert

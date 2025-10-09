@@ -1,6 +1,6 @@
 ---
 title: "AI Competitions and Benchmarks, Practical issues: Proposals, grant money, sponsors, prizes, dissemination, publicity"
-authors: "M. Richard, Y. Blum, J. Guinney, G. Stolovitzky, A. Pavao"
+authors: "<b>M. Richard</b>, Y. Blum, J. Guinney, G. Stolovitzky, A. Pavao"
 journal: "DMLR"
 collection: publications
 permalink: /publication/202401-richard_blum_guinney_stolovitzky
