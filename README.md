@@ -63,6 +63,8 @@ You can build and execute the container by running the following command in the 
 ```bash
 chmod -R 777 .
 docker compose up
+ /Applications/Docker.app/Contents/Resources/bin/docker compose up #alternative
+
 ```
 
 You should now be able to access the website from `localhost:4000`.
