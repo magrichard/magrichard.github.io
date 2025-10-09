@@ -1,7 +1,7 @@
 ---
 title: "DNA methylation and immune infiltration mediate the impact of tobacco exposure on pancreatic adenocarcinoma outcome: a high-dimensional mediation analysis"
 authors: "F. Pittion, E. Amblard, E. Devijver, A. Samson, N. Varoquaux, <b>M. Richard</b>"
-journal: "In revision at Plos Computional Biology"
+journal: "BioRxiv"
 collection: publications
 permalink: /publication/202509-pittion_amblard_devijver_samson
 venue: ''
