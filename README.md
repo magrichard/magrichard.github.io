@@ -54,6 +54,36 @@ When you are initially working on your website, it is very useful to be able to 
 
 If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
+## MAG INSTALL
+
+```bash
+conda create --name website-dev
+#brew install ruby
+#brew install node
+#echo 'export PATH="$(brew --prefix ruby)/bin:$PATH"' >> ~/.zshrc
+#source ~/.zshrc
+#gem install bundler
+
+#bundle config set --local path 'vendor/bundle'
+#gem install --user-install rdiscount -v '2.1.7'conda
+bundle install
+
+# installer rbenv
+brew install rbenv ruby-build
+# installer une version stable compatible (ex. 3.1.4)
+rbenv install 3.1.4
+rbenv local 3.1.4
+# mettre ruby homebrew/rbenv en PATH si besoin, puis
+echo 'export PATH="$(rbenv root)/shims:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+gem install bundler
+bundle config set --local path 'vendor/bundle'
+bundle install
+
+# lancer Jekyll via Bundler (utilise les gems du projet)
+bundle exec jekyll serve -l -H localhost
+```
+
 ## Using Docker
 
 Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.

@@ -22,31 +22,96 @@ Research projects
 
 **On going projects:**
 
+<!-- Project cards: generate automatically from pages whose permalink contains "/projects/" -->
+<style>
+.project-card-top{
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
+  align-items:flex-start;
+  margin:1rem 0 1.5rem;
+  padding:14px;
+  border:1px solid #e6e6e6;
+  border-radius:8px;
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,0.03);
+}
+.project-card-top img{
+  width:100%;
+  max-width:920px;
+  height:auto;
+  border-radius:6px;
+  object-fit:cover;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+.project-card-top .meta{ width:100%; }
+.project-card-top h3{ margin:0 0 6px; font-size:1.05rem; }
+.project-card-top p{ margin:0 0 8px; color:#444; }
+.project-card-top .summary{ color:#666; font-size:0.95rem; line-height:1.5; }
+.project-card-top .actions{ margin-top:10px; }
+@media(min-width:960px){
+  .project-card-top{ max-width:920px; }
+}
+</style>
 
-- **[SCALER](https://miai-cluster.univ-grenoble-alpes.fr/research/chairs/scaler-scientific-competitions-for-advancing-learning-and-enhancing-research-in-life-sciences-1625740.kjsp)**  
-  *Scientific Competitions for Advancing Learning and Enhancing Research in Life Sciences*  
-  *MIAI Cluster Chair* (June 2025 – Sept. 2029)
+{%- for p in site.pages -%}
+  {%- if p.permalink and p.permalink contains '/projects/' -%}
+    <div class="project-card-top">
+      {%- if p.image -%}
+        <img src="{{ p.image }}" alt="{{ p.title | escape }}" />
+      {%- endif -%}
+      <div class="meta">
+        <h3>{{ p.title }}</h3>
+         {%- if p.subtitle -%}
+          <p style="margin:4px 0 8px;color:#666;font-style:italic;">{{ p.subtitle }}</p>
+        {%- endif -%}
+        <p>
+          {%- if p.coordinator -%}<strong>Coordinator:</strong> {{ p.coordinator }}{%- elsif p.authors -%}<strong>Coordinator:</strong> {{ p.authors }}{%- endif -%}
+          {%- if p.agency -%} &nbsp; • &nbsp; <strong>Funding:</strong> {{ p.agency }}{%- endif -%}
+        </p>
+         {%- if p.partners -%}
+        <p><strong>Partners:</strong> {{ p.partners }}</p>
+        {%- endif -%}
+        {%- if p.period -%}
+        <p><strong>Period:</strong> {{ p.period }}</p>
+        {%- endif -%}
+        <p class="summary">
+          {%- if p.excerpt -%}
+            {{ p.excerpt | strip_html }}
+          {%- elsif p.summary -%}
+            {{ p.summary | strip_html }}
+          {%- else -%}
+            {{ p.content | strip_html | truncate: 280 }}
+          {%- endif -%}
+        </p>
+              <p class="actions">
+        {%- if p.external_url -%}
+          <a href="{{ p.permalink }}" style="display:inline-block;padding:8px 12px;background:#0b6cff;color:#fff;border-radius:5px;text-decoration:none;font-weight:600;">Project page</a>
+          <a href="{{ p.external_url }}" target="_blank" rel="noopener" style="display:inline-block;margin-left:8px;padding:8px 12px;border-radius:5px;border:1px solid:#ddd;text-decoration:none;color:#0b6cff;background:#fff;font-weight:600;">External link</a>
+        {%- elsif p.url -%}
+          <a href="{{ p.permalink }}" style="display:inline-block;padding:8px 12px;background:#0b6cff;color:#fff;border-radius:5px;text-decoration:none;font-weight:600;">Project page</a>
+          <a href="{{ p.url }}" target="_blank" rel="noopener" style="display:inline-block;margin-left:8px;padding:8px 12px;border-radius:5px;border:1px solid:#ddd;text-decoration:none;color:#0b6cff;background:#fff;font-weight:600;">External link</a>
+        {%- elsif p.paperurl -%}
+          <a href="{{ p.permalink }}" style="display:inline-block;padding:8px 12px;background:#0b6cff;color:#fff;border-radius:5px;text-decoration:none;font-weight:600;">Project page</a>
+          <a href="{{ p.paperurl }}" target="_blank" rel="noopener" style="display:inline-block;margin-left:8px;padding:8px 12px;border-radius:5px;border:1px solid:#ddd;text-decoration:none;color:#0b6cff;background:#fff;font-weight:600;">External link</a>
+        {%- else -%}
+          <a href="{{ p.permalink }}" style="display:inline-block;padding:8px 12px;background:#0b6cff;color:#fff;border-radius:5px;text-decoration:none;font-weight:600;">Project page</a>
+        {%- endif -%}
+      </p>
+      </div>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
 
-- **[DECODE](https://www.mathjax.org/)**  
-  *Computational decryption and mathematical modeling of regulatory networks governing plasmacytoid dendritic cell biology*  
-  *CNRS 80 PRIME* (Oct. 2025 – Sept. 2028)
-
-- **[CauseHet](https://anr.fr/Projet-ANR-22-CE45-0030)**  
-  *Causes and consequences of tumor heterogeneity*  
-  *ANR JCJC* (Sept. 2023 – Aug. 2027)
-
-- **[M4DI](https://m4di.univ-amu.fr/)**  
-  *IRP3: Statistical inference of cellular heterogeneity using multi-omic prior biological knowledge*  
-  *PEPR Santé Numérique* (Sept. 2023 – Aug. 2028)
 
 
 **Past projects:**
 
-- [ACACIA](https://www.mathjax.org/) 2021-2025 ITMO Cancer AVIESAN
-- [THEMA]() 2022-2015 IRS-IDEX UGA
-- [ARTICAH](https://miai-cluster.univ-grenoble-alpes.fr/research/miai-exploratory-projects/miai-exploratory-projects-1314235.kjsp#Para5) 2021 UGA MIAI
-- [COMETH]() 2019 EIT Health
-- [HADACA]() 2018 EIT Health
-- [LuCaH]() 2019 IRS-IDEX UGA
-- [Epi-Cancer]() 2018 PEPS - CNRS INS2I
+- **ACACIA** 2021-2025 ITMO Cancer AVIESAN
+- **THEMA** 2022-2015 IRS-IDEX UGA
+- **ARTICAH** 2021 UGA MIAI
+- **COMETH** 2019 EIT Health
+- **HADACA** 2018 EIT Health
+- **LuCaH** 2019 IRS-IDEX UGA
+- **Epi-Cancer** 2018 PEPS - CNRS INS2I
 
