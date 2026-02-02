@@ -570,221 +570,31 @@ border-radius: .1em;
   color: #fff;
 }
 
-/* Conteneur principal de la frise */
-.timeline {
-  position: relative;
-  padding: 20px 0;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-/* Ligne verticale de la frise */
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: #007bff;
-  transform: translateX(-50%);
-}
-
-/* Éléments de la frise */
-.timeline-item {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 40px;
-}
-
-/* Cercle pour l'année */
+/* Strong overrides for timeline bubbles/line (EOF) */
+.timeline .timeline-circle,
+.timeline-item .timeline-circle,
 .timeline-circle {
-  width: 80px;            /* largeur du cercle */
-  height: 80px;           /* hauteur du cercle */
-  border-radius: 50%;     /* forme ronde */
-  background-color: #8400ff; /* couleur de fond */
-  color: white;           /* couleur du texte */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2em;       /* taille du texte */
-  text-align: center;
-  flex-shrink: 0;         /* ne pas rétrécir */
-  margin-right: 20px;     /* espace avec le contenu */
+  background-color: var(--timeline-bubble) !important;
+  background-image: none !important;
+  color: var(--timeline-text-in-bubble) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12) !important;
+  border: 2px solid rgba(255,255,255,0.12) !important;
 }
 
-/* Vignette pour chaque publication */
-.timeline-item .timeline-content {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  padding: 15px;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s ease-in-out;
+/* If you prefer a gradient inside the bubble instead of flat color */
+.timeline .timeline-circle.gradient,
+.timeline-item .timeline-circle.gradient {
+  background: linear-gradient(var(--timeline-line-start), var(--timeline-line-end)) !important;
 }
 
-/* Effet au survol pour les vignettes */
-.timeline-item:hover .timeline-content {
-  transform: translateY(-10px);
-}
-
-/* La ligne connectant les publications */
-.timeline-item .timeline-line {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #007bff;
-  z-index: 2;
-  transform: translateX(-50%);
-}
-
-/* Détail des métadonnées et du résumé */
-.publication-meta {
-  font-size: 0.9em;
-  color: #555;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
-/* Animations et transitions */
-.timeline-item .timeline-content {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.5s ease-out forwards;
-}
-
-/* Animation pour faire apparaître les vignettes */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* Personnalisation des couleurs */
-
+/* Strong override for the central vertical line and small dots */
 .timeline::before {
-  width: 4px; /* Augmenter la largeur de la ligne */
-  background: #b4ff33; /* Changer la couleur de la ligne */
+  background: linear-gradient(var(--timeline-line-start), var(--timeline-line-end)) !important;
+  width: 4px !important;
 }
-
+.timeline .timeline-item .timeline-line,
 .timeline-item .timeline-line {
-  background-color: #b4ff33; /* Changer la couleur des cercles */
-}
-
-.publication-authors {
-  font-style: italic;
-  margin: 0 0 5px 0;
-  color: #333;
-}
-
-/* Publication cards */
-.publication-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.publication-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.publication-meta {
-  font-size: 0.9em;
-  color: #555;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
-/* Filtres */
-.filters {
-  margin-bottom: 30px;
-}
-
-.category-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
-.category-list li a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.category-list li a:hover {
-  text-decoration: underline;
-}
-
-/* Mise en page de la page d'archive */
-.publication-category {
-  margin-bottom: 40px;
-}
-
-.publication-category h2 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.publication-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.publication-summary {
-  font-size: 1em;
-  color: #666;
-}
-
-
-
-.timeline-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-.timeline-list li {
-  display: flex;
-  margin-bottom: 10px;
-  align-items: flex-start;
-}
-.timeline-year {
-  font-weight: bold;
-  color: #9d00ff;
-  width: 100px; /* largeur fixe pour aligner les années */
-  flex-shrink: 0;
-}
-.timeline-event {
-  flex: 1;
+  background-color: var(--timeline-dot) !important;
+  box-shadow: none !important;
 }
