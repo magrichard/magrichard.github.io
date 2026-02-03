@@ -14,14 +14,42 @@ author_profile: true
 <!-- Inline CSS + timeline (directement dans la page) -->
 <style>
 /* place ici le CSS que tu veux (ex: .type-badge, .timeline, .timeline-circle, .timeline-line, ...) */
-.type-badge{ display:inline-flex; align-items:center; gap:0.5rem; padding:6px 10px; border-radius:999px; background:#f3f6ff; border:1px solid #e6eefc; font-weight:600; color:#0b3b7a; font-size:0.95rem; margin-bottom:0.5rem; }
+.type-badge{ display:inline-flex; align-items:center; gap:0.5rem; padding:6px 10px; border-radius:999px; background:#f3f6ff; border:1px solid #101112; font-weight:600; color:#0b3b7a; font-size:0.95rem; margin-bottom:0.5rem; }
 .timeline { position: relative; padding: 20px 0; max-width: 800px; margin: 0 auto; }
 .timeline::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: linear-gradient(#ff540b,#ff540b); transform: translateX(-50%); }
 .timeline-item { position: relative; display: flex; justify-content: flex-start; margin-bottom: 40px; }
-.timeline-circle { width: 80px; height: 80px; border-radius: 50%; background-color: #ffc20b; color: #fff; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:1.2em; margin-right:20px; flex-shrink:0; }
+.timeline-circle { width: 80px; height: 80px; border-radius: 50%; background-color: #193148; color: #fff; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:1.2em; margin-right:20px; flex-shrink:0; }
 .timeline-content { background:#f9f9f9; border-radius:10px; padding:15px; width:100%; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
 .timeline-item .timeline-line { position:absolute; top:0; left:50%; width:10px; height:10px; border-radius:50%; background:#ff540b; z-index:2; transform:translateX(-50%); }
 /* adapte le reste selon ton design */
+/* force readable meta (authors / journal / summary) inside the card */
+.timeline-content .publication-authors,
+.timeline-content .publication-journal,
+.timeline-content .publication-summary,
+.timeline-content p {
+  color: #222 !important; /* claire pour thème clair */
+}
+
+/* dark mode: texte clair */
+@media (prefers-color-scheme: dark) {
+  .timeline-content .publication-authors,
+  .timeline-content .publication-journal,
+  .timeline-content .publication-summary,
+  .timeline-content p {
+    color: #e6e6e6 !important;
+  }
+
+  /* si le fond de la card est sombre, ajuste le background ici */
+  .timeline-content {
+    background-color: #121212 !important;
+  }
+}
+
+/* summary smaller */
+.timeline-content .publication-summary {
+  font-size: 0.9rem !important;
+  line-height: 1.4 !important;
+}
 </style>
 
 <!-- timeline + Liquid loop -->
@@ -45,76 +73,10 @@ author_profile: true
             {% if post.authors %}<p class="publication-authors">{{ post.authors }}</p>{% endif %}
             {% if post.journal %}<p class="publication-journal">{{ post.journal }}</p>{% endif %}
             {% if post.excerpt %}<p class="publication-summary">{{ post.excerpt }}</p>{% endif %}
-            <p><a href="{{ post.url }}" class="read-more">Read more</a></p>
             {% unless forloop.last %}<hr style="margin:1rem 0;border:none;border-top:1px dashed #e6e6e6;">{% endunless %}
           </div>
         {% endfor %}
       </div>
-      <div class="timeline-line"></div>
-    </div>
-  {%- endfor -%}
-</div>
-
-<!-- Timeline grouped by year: one bubble per year, publications listed below -->
-<style>
-.type-badge{
-  display:inline-flex;
-  align-items:center;
-  gap:0.5rem;
-  padding:6px 10px;
-  border-radius:999px;
-  background:#fbf6d5;
-  border:1px solid #e6eefc;
-  font-weight:600;
-  color:#484539;
-  font-size:0.95rem;
-  margin-bottom:0.5rem;
-}
-.type-badge .icon{ font-size:1.05rem; line-height:1; }
-.publication-entry h3{ margin:0 0 6px; }
-.publication-entry { margin-bottom:1rem; }
-</style>
-
-<div class="timeline">
-  {%- assign years = site.publications | map: 'year' | uniq | sort | reverse -%}
-  {%- for year in years -%}
-    <div class="timeline-item">
-      <div class="timeline-circle">
-        <span class="year">{{ year }}</span>
-      </div>
-
-      <div class="timeline-content">
-        {% assign posts_year = site.publications | where: "year", year | sort: "title" %}
-        {% for post in posts_year %}
-          {%- case post.type -%}
-            {%- when "Research Article" -%}
-              {%- assign icon = "🔬" -%}
-            {%- when "Review" -%}
-              {%- assign icon = "📚" -%}
-            {%- when "Software" -%}
-              {%- assign icon = "🧰" -%}
-            {%- else -%}
-              {%- assign icon = "📄" -%}
-          {%- endcase -%}
-
-          <div class="publication-entry">
-            <div class="type-badge"><span class="icon">{{ icon }}</span><span>{{ post.type }}</span></div>
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {% if post.authors %}
-              <p class="publication-authors">{{ post.authors }}</p>
-            {% endif %}
-            {% if post.journal %}
-              <p class="publication-journal">{{ post.journal }}</p>
-            {% endif %}
-            {% if post.excerpt %}
-              <p class="publication-summary">{{ post.excerpt }}</p>
-            {% endif %}
-            <p><a href="{{ post.url }}" class="read-more">Read more</a></p>
-            {% unless forloop.last %}<hr style="margin:1rem 0;border:none;border-top:1px dashed #e6e6e6;">{% endunless %}
-          </div>
-        {% endfor %}
-      </div>
-
       <div class="timeline-line"></div>
     </div>
   {%- endfor -%}
