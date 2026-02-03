@@ -1,73 +1,144 @@
 ---
 layout: archive
-title: "Conferences and Presentations"
+title: "Academic & Scientific Activities"
 permalink: /talks/
 author_profile: true
 ---
 
-<section id="scientific-conferences">
-  <h2>Organization of Scientific Conferences</h2>
-  <ul class="timeline-list">
-    <li>
-      <span class="timeline-year">2024-26</span>
-      <span class="timeline-event">BIGRE seminar series, Computational Biology seminars, Grenoble</span>
-    </li>
-      <li>
-      <span class="timeline-year">2025</span>
-      <span class="timeline-event">CompSysBio, CNRS Winter School, Aussois</span>
-    </li>
-    <li>
-      <span class="timeline-year">2024</span>
-      <span class="timeline-event">COBICA24, Computational Biology of Cancer, Grenoble</span>
-    </li>
-    <li>
-      <span class="timeline-year">2021</span>
-      <span class="timeline-event">CompSysBio, CNRS Winter School, Aussois</span>
-    </li>
-    <li>
-      <span class="timeline-year">2020</span>
-      <span class="timeline-event">COMETH Winter School, online</span>
-    </li>
-    <li>
-      <span class="timeline-year">2018-19</span>
-      <span class="timeline-event">TIMC Computational Biology seminar</span>
-    </li>
-    <li>
-      <span class="timeline-year">2017-2018</span>
-      <span class="timeline-event">Founder and organizer of R Seminar Series, Grenoble</span>
-    </li>
-  </ul>
-</section>
+  <div class="activity-block">
+    <h2>Scientific Conferences & Schools</h2>
 
-<section id="data-challenges">
-  <h2>Organization of Data Challenges</h2>
-  <ul class="timeline-list">
-    <li>
-      <span class="timeline-year">2024</span>
-      <span class="timeline-event">HADACA3 Health Data Challenge, co-organized with PEPR M4DI, Aussois</span>
-    </li>
-    <li>
-      <span class="timeline-year">2019</span>
-      <span class="timeline-event">HADACA2 Health Data Challenge, Aussois</span>
-    </li>
-    <li>
-      <span class="timeline-year">2018</span>
-      <span class="timeline-event">HADACA1 Health Data Challenge, Aussois</span>
-    </li>
-  </ul>
-</section>
+    <ul class="timeline-list">
+        <div class="content">
+        <strong> 
+           <a href="https://bi-gre.github.io/" target="_blank" rel="noopener">BIGRE seminar series</a> </strong>
+           <span class="badge badge-date">
+  <span class="icon">📅</span> 2024 to now
+</span>
+       <span class="badge">Co-organizer</span><br>
+       <span class="timeline-description">Computational Biology seminars, Grenoble</span>
+        </div>
+          </ul>
 
-<section id="data-challenges">
-   <h2>Selected talks and presentations</h2>
+    <ul class="timeline-list">
+         <div class="content">
+        <strong>CompSysBio</strong>
+          <span class="badge badge-date">
+  <span class="icon">📅</span> 2021 and 2025
+</span>
+       <span class="badge">Member of the organizing committee</span><br>
+       <span class="timeline-description">CNRS Winter School, Aussois</span>
+        </div>
+    </ul>
 
-{% if site.talkmap_link == true %}
+        <ul class="timeline-list">
+          <div class="content">
+          <strong>COBICA24, 2024</strong>
+        <span class="badge">Chair of the organizing committee</span><br>
+        Computational Biology of Cancer, Grenoble
+          </div>
+</ul>
+        <ul class="timeline-list">
+          <div class="content">
+          <strong>COMETH, 2020</strong>
+        <span class="badge">Chair of the organizing committee</span><br>
+        Winter School, online
+          </div>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+    </ul>
+  </div>
 
-{% endif %}
+  <div class="activity-block">
+    <h2>Data Challenges</h2>
+    <ul class="timeline-list">
+      <div class="content">
+  <strong>HADACA3</strong>
+  <span class="badge">Chair of the organizing committee</span><br>
+  Health Data Challenge, Aussois
+</div>
+    </ul>
+    <ul class="timeline-list">
+          <div class="content">
+          <strong>HADACA2, 2019</strong>
+        <span class="badge">Chair of the organizing committee</span><br>
+        Health Data Challenge, Aussois
+          </div>
+           </ul>
+             <ul class="timeline-list">
+          <div class="content">
+          <strong>HADACA1, 2018</strong>
+        <span class="badge">Chair of the organizing committee</span><br>
+        Health Data Challenge, Aussois
+          </div>
+           </ul>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  </div>
 
-</section>
+  <div class="activity-block">
+  <h2>Selected Talks & Presentations</h2>
+
+  {% if site.talkmap_link %}
+    <p class="talkmap-link">
+      <a href="/talkmap.html">📍 Map of invited talks</a>
+    </p>
+  {% endif %}
+
+  {% for post in site.talks reversed %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+</div>
+
+<style>
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;                 /* ESPACE date / contenu */
+  margin-bottom: 1.5rem;
+}
+
+.timeline-year {
+  min-width: 90px;
+  text-align: right;
+  font-weight: 600;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.timeline-event {
+  line-height: 1.5;
+}
+.activity-block {
+  margin-bottom: 2rem;
+}
+
+/* Kill Minimal Mistakes vertical line */
+.page__content ul::before,
+.page__content .archive::before {
+  content: none !important;
+}
+
+.badge {
+  font-size: 0.75rem;
+  background: #eee;
+  color: #444;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+
+.timeline-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.badge-date .icon {
+  margin-right: 3px;
+}
+
+</style>
