@@ -1,16 +1,16 @@
 ---
-title: "DNA methylation and immune infiltration mediate the impact of tobacco exposure on pancreatic adenocarcinoma outcome: a high-dimensional mediation analysis"
+title: "HDMAX2-surv: high-dimensional mediation analysis of survival data with application to pancreatic cancer"
 authors: "F. Pittion, E. Amblard, E. Devijver, A. Samson, N. Varoquaux, <b>M. Richard</b>"
 journal: "BioRxiv"
 collection: publications
 permalink: /publication/202509-pittion_amblard_devijver_samson
 venue: ''
-citation: '<b> DNA methylation and immune infiltration mediate the impact of tobacco exposure on pancreatic adenocarcinoma outcome: a high-dimensional mediation analysis</b>. Florence Pittion, Elise Amblard, Emilie Devijver, Adeline Samson, Nelle Varoquaux, Magali Richard. bioRxiv 2025.09.09.675033; doi: https://doi.org/10.1101/2025.09.09.675033'
+citation: '<b> HDMAX2-surv: high-dimensional mediation analysis of survival data with application to pancreatic cancer</b>. Florence Pittion, Elise Amblard, Emilie Devijver, Adeline Samson, Nelle Varoquaux, Magali Richard. bioRxiv 2025.09.09.675033v3; doi: https://doi.org/10.1101/2025.09.09.675033v3'
 year: '2025'
 ISSN: 2692-8205
-Pages: 2025.09.09.675033
+Pages: 2025.09.09.675033v3
 Section: New Results
-paperurl: 'https://www.biorxiv.org/content/10.1101/2025.09.09.675033v1'
+paperurl: 'https://www.biorxiv.org/content/10.1101/2025.09.09.675033v3'
 type: 'Research Article'
 ---
 
