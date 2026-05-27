@@ -11,7 +11,7 @@ ISSN: 2692-8205
 Pages: 2025.09.09.675033v3
 Section: New Results
 paperurl: 'https://www.biorxiv.org/content/10.1101/2025.09.09.675033v3'
-type: 'Research Article'
+type: 'Preprint'
 ---
 
 In this work, we developed HDMAX2-surv, a novel framework for high-dimensional mediation analysis specifically adapted to censored survival data. Our approach integrates computational immune deconvolution with causal discovery and serial mediation analysis, addressing a critical methodological gap in understanding how molecular intermediates shape clinical outcomes.

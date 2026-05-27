@@ -11,7 +11,7 @@ ISSN:
 Pages: 
 Section:
 paperurl: 'https://hal.sorbonne-universite.fr/PEPR_SANTENUM/hal-05445539v1'
-type: 'Research Article'
+type: 'Preprint'
 ---
 
 This paper provides a comprehensive guide for organizing scientific competitions in bioinformatics, based on our experience with HADACA3, a data challenge focused on deconvolution algorithms for predicting cellular composition in cancer, from multi-omics data. 
