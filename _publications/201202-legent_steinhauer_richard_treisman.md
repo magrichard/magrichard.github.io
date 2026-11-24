@@ -8,4 +8,5 @@ venue: ''
 citation: 'K. Legent, J. Steinhauer, M. Richard, J. E. Treisman. <b>A screen for X-linked mutations affecting Drosophila photoreceptor differentiation identifies Casein kinase 1α as an essential negative regulator of wingless signaling</b>, <i>Genetics,</i> February 2012'
 year: '2012'
 type: 'Research Article'
+paperurl: 'https://doi.org/10.1534/genetics.111.133827'
 ---

@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "SCALER"
 subtitle: "Scientific Competitions for Advancing Learning and Enhancing Research in life sciences"
 coordinator: "M. Richard"
@@ -10,14 +11,12 @@ external_url: 'https://miai-cluster.univ-grenoble-alpes.fr/research/chairs/scale
 period: 'June 2025 – Sept. 2029'
 type: 'Project'
 image: /assets/images/projects/scaler.png
+role: "coordinator"
+start: "2025-06"
+summary: "How scientific competitions can advance AI in life sciences, through four PhD projects in ecology, oncology, evolution and educational sciences."
 ---
 
-<p style="margin-bottom:1rem;">
-  <img src="{{ page.image }}" alt="SCALER" style="max-width:100%;height:auto;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.08)"/>
-</p>
-
-
-<div style="color:#222;font-size:1rem;line-height:1.7;">
+<div class="project-description">
 Scientific competitions, or "data challenges," have proven effective for machine learning development by providing clear objectives, benchmark datasets, and standardized evaluation methods. While successful in computer science, their application in life sciences faces unique challenges: complex biological datasets, appropriate evaluation metrics, and translating biological questions into computational tasks.
 <br><br>
 The SCALER project explores how scientific competitions can advance AI innovation in life sciences. Building on the "Data Challenge @ UGA" initiative and our collaboration with the Codabench platform, SCALER combines methodological research with educational approaches.

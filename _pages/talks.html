@@ -1,148 +1,47 @@
 ---
 layout: archive
-title: "Academic & Scientific Activities"
+title: "Talks & events"
 permalink: /talks/
 author_profile: true
 ---
+{% include base_path %}
+{%- comment -%}
+  Events and data challenges come from _data/activities.yml.
+  Talks come from _talks/ (one file per talk: title, type, venue, location, date, external_url).
+{%- endcomment -%}
 
-  <div class="activity-block">
-    <h2>Scientific conferences & Schools</h2>
-
-    <ul class="timeline-list">
-        <div class="content">
-        <strong> 
-           <a href="https://bi-gre.github.io/" target="_blank" rel="noopener">BIGRE seminar series</a> 
-          </strong>
-       <span class="badge">Co-organizer</span><br>
-       <span class="timeline-description">Computational Biology seminars and scientific animation in Grenoble, created in 2024.</span>
-        </div>
-          </ul>
-
-    <ul class="timeline-list">
-         <div class="content">
-        <strong>
-          <a href="https://project.inria.fr/compsysbio2025/" target="_blank" rel="noopener">CompSysBio</a>
-       </strong>
-       <span class="badge">Member of the organizing committee</span><br>
-       <span class="timeline-description">Advances lecture course on computational systems biology, Aussois, France</span>
-        </div>
-    </ul>
-
-        <ul class="timeline-list">
-          <div class="content">
-          <strong>
-            <a href="https://cobica2024.sciencesconf.org/" target="_blank" rel="noopener">COBICA</a>
-        </strong>
-        <span class="badge">Chair of the organizing committee</span><br>
-        <span class="timeline-description">Conference on computational Biology of Cancer, Grenoble, 2024</span>
-          </div>
+{%- assign sections = "challenges,events" | split: "," -%}
+{%- for key in sections -%}
+<h2>{% if key == "events" %}Event organization{% else %}Data challenges{% endif %}</h2>
+<ul class="activity-list">
+  {%- for a in site.data.activities[key] %}
+  <li class="activity">
+    <span class="activity__when">{{ a.years }}</span>
+    <div class="activity__what">
+      <p class="activity__title">
+        {% if a.url %}<a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.name }}</a>{% else %}<strong>{{ a.name }}</strong>{% endif %}
+        <span class="activity__role">{{ a.role }}</span>
+        {% if a.upcoming %}<span class="activity__role activity__role--upcoming">Upcoming</span>{% endif %}
+      </p>
+      <p class="activity__desc">{{ a.description }}</p>
+    </div>
+  </li>
+  {%- endfor %}
 </ul>
-        <ul class="timeline-list">
-          <div class="content">
-          <strong>
-            <a href="https://comteh-winter21.sciencesconf.org/" target="_blank" rel="noopener">COMETH</a></strong>
-        <span class="badge">Chair of the organizing committee</span><br>
-        <span class="timeline-description">From omics data to tumor heterogeneity quantification, Winter School, online, 2020</span>
-          </div>
+{%- endfor %}
 
-    </ul>
-  </div>
-
-  <div class="activity-block">
-    <h2>Data Challenges</h2>
-    <ul class="timeline-list">
-      <div class="content">
-  <strong>
-    <a href="https://hadaca3.sciencesconf.org/" target="_blank" rel="noopener">HADACA3</a></strong>
-  <span class="badge">Chair of the organizing committee</span><br>
-  <span class="timeline-description">
-    Multimodal data integration to quantify tumor heterogeneity in cancer, Health Data Challenge, Aussois, France, 2024
-  </span>
-</div>
-    </ul>
-    <ul class="timeline-list">
-          <div class="content">
-          <strong>
-            <a href="https://cancer-heterogeneity.github.io/data_challenge_2019.html" target="_blank" rel="noopener">HADACA2</a></strong>
-        <span class="badge">Chair of the organizing committee</span><br>
-       <span class="timeline-description"> Matrix factorization and deconvolution methods to quantify tumor heterogeneity in cancer research, Aussois, France, 2019 </span>
-          </div>
-           </ul>
-             <ul class="timeline-list">
-          <div class="content">
-          <strong>
-            <a href="https://cancer-heterogeneity.github.io/data_challenge_2018.html" target="_blank" rel="noopener">HADACA1</a></strong>
-        <span class="badge">Chair of the organizing committee</span><br>
-       <span class="timeline-description">Statistical methods to quantify intra-tumour heterogeneity in cancer research, Aussois, France, 2018</span>
-          </div>
-           </ul>
-
-  </div>
-
-  <div class="activity-block">
-  <h2>Selected talks & Presentations</h2>
-
-  {% if site.talkmap_link %}
-    <p class="talkmap-link">
-      <a href="/talkmap.html">📍 Map of invited talks</a>
-    </p>
-  {% endif %}
-
-  {% for post in site.talks reversed %}
-    {% include archive-single-talk.html post=post %}
-  {% endfor %}
-</div>
-
-<style>
-.timeline {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.timeline-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;                 /* ESPACE date / contenu */
-  margin-bottom: 1.5rem;
-}
-
-.timeline-year {
-  min-width: 90px;
-  text-align: right;
-  font-weight: 600;
-  color: #666;
-  flex-shrink: 0;
-}
-
-.timeline-event {
-  line-height: 1.5;
-}
-.activity-block {
-  margin-bottom: 2rem;
-}
-
-/* Kill Minimal Mistakes vertical line */
-.page__content ul::before,
-.page__content .archive::before {
-  content: none !important;
-}
-
-.badge {
-  font-size: 0.75rem;
-  background: #eee;
-  color: #444;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-left: 6px;
-}
-
-.timeline-description {
-  font-size: 0.8em;
-}
-
-.badge-date .icon {
-  margin-right: 3px;
-}
-
-</style>
+<h2>Invited talks</h2>
+<ul class="activity-list">
+  {%- assign talks = site.talks | sort: "date" | reverse -%}
+  {%- for t in talks %}
+  <li class="activity">
+    <span class="activity__when">{{ t.date | date: "%b %Y" }}</span>
+    <div class="activity__what">
+      <p class="activity__title">
+        {% if t.external_url and t.external_url != "" %}<a href="{{ t.external_url }}" target="_blank" rel="noopener">{{ t.title }}</a>{% else %}<strong>{{ t.title }}</strong>{% endif %}
+      </p>
+      <p class="activity__desc">{{ t.venue }}{% if t.location %}, {{ t.location }}{% endif %}</p>
+    </div>
+  </li>
+  {%- endfor %}
+</ul>

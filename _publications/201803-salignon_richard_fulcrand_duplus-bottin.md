@@ -8,4 +8,5 @@ venue: ''
 citation: 'J. Salignon, M. Richard, E. Fulcrand, H. Duplus-Bottin <i>et al.</i>. <b>Genomics of cellular proliferation in periodic environmental fluctuations</b>, <i>Molecular Systems Biology,</i> March 2018'
 year: '2018'
 type: 'Research Article'
+paperurl: 'https://doi.org/10.15252/msb.20177823'
 ---

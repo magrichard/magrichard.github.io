@@ -11,6 +11,8 @@
 @import
     "vendor/breakpoint/breakpoint",
 
+    "fonts",
+
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
@@ -41,3 +43,434 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/* Logo + text rows (home page) */
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25em 2em;
+  margin-bottom: 1.75em;
+
+  .logo-row__logo {
+    flex: 0 0 180px;
+    text-align: center;
+
+    img {
+      max-width: 180px;
+      max-height: 110px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .logo-row__text {
+    flex: 1 1 300px;
+    margin: 0;
+  }
+}
+
+/* Palette B: brown links + sage green accents (Bioinfo@APTIKAL logo) */
+
+/* Links in page content: subtle brown underline */
+.page__content a {
+  text-decoration: underline;
+  text-decoration-color: var(--global-link-underline-color);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration-color: var(--global-link-color-hover);
+  }
+}
+
+/* Section headings: sage rule */
+.page__content h2 {
+  border-bottom: 2px solid var(--global-accent-light-color);
+}
+
+/* Top menu: sage bar on hover and on the current section */
+.greedy-nav .visible-links a:before {
+  background: var(--global-accent-color);
+}
+.greedy-nav .visible-links li.is-active a {
+  color: var(--global-masthead-link-color-hover);
+
+  &:before {
+    transform: scaleX(1);
+  }
+}
+
+/* Sidebar: sage ring around the photo, sage icons */
+.author__avatar img {
+  @include breakpoint($large) {
+    border: 2px solid var(--global-accent-color);
+  }
+}
+.author__urls i {
+  color: var(--global-accent-color);
+}
+
+/* ==========================================================================
+   Research projects page (/portfolio/)
+   ========================================================================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25em;
+  margin: 1em 0 2em;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none !important;
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--global-accent-color);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+
+    .project-card__title { color: var(--global-link-color-hover); }
+  }
+
+  &:visited { color: var(--global-text-color); }
+}
+
+.project-card__banner {
+  height: 130px;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid var(--global-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.project-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--global-accent-bg-color);
+  color: var(--global-link-color-hover);
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 0.08em;
+}
+
+.project-card__body {
+  padding: 0.9em 1.1em 1em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card__title {
+  margin: 0 0 0.15em;
+  font-size: 1.15em;
+  color: var(--global-link-color);
+  transition: $global-transition;
+}
+
+.project-card__subtitle {
+  margin: 0 0 0.6em;
+  font-size: 0.82em;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--global-text-color-light);
+}
+
+.project-card__summary {
+  margin: 0 0 0.8em;
+  font-size: 0.88em;
+  line-height: 1.45;
+}
+
+.project-card__meta {
+  margin: auto 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em 1em;
+  font-size: 0.75em;
+  color: var(--global-text-color-light);
+
+  i { color: var(--global-accent-color); margin-right: 0.2em; }
+}
+
+.past-projects {
+  font-size: 0.9em;
+
+  th { background: var(--global-accent-bg-color); }
+  td, th { padding: 0.45em 0.8em; }
+}
+
+/* ==========================================================================
+   Project detail pages (_layouts/project.html)
+   ========================================================================== */
+
+.project-back {
+  font-size: 0.85em;
+  margin-bottom: 0.5em !important;
+}
+
+.project-subtitle {
+  margin-top: 0;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+.project-info {
+  position: relative;
+  margin: 1em 0 1.5em;
+  padding: 0.9em 1.2em;
+  border-left: 4px solid var(--global-accent-color);
+  border-radius: 4px;
+  background: var(--global-accent-bg-color);
+  font-size: 0.9em;
+
+  dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.25em 1.2em;
+    margin: 0;
+  }
+  dt { font-weight: 600; margin: 0; }
+  dd { margin: 0; }
+}
+
+.project-badge {
+  float: right;
+  margin: 0 0 0.5em 1em;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  font-size: 0.8em;
+  font-weight: 600;
+
+  &--coordinator { background: var(--global-link-color); color: #fff; }
+  &--partner { background: #fff; color: var(--global-link-color); border: 1px solid var(--global-link-color); }
+}
+
+.project-figure {
+  margin: 0 0 1.5em;
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--global-border-color);
+    border-radius: 6px;
+  }
+}
+
+.project-description {
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Publications page (/publications/)
+   ========================================================================== */
+
+.pubs-intro {
+  font-size: 0.9em;
+  color: var(--global-text-color-light);
+}
+
+.pubs-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1em 0 1.5em;
+}
+
+.pubs-filter {
+  padding: 0.3em 0.9em;
+  border: 1px solid var(--global-accent-light-color);
+  border-radius: 999px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-family: inherit;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover { border-color: var(--global-accent-color); }
+
+  &.is-active {
+    background: var(--global-link-color);
+    border-color: var(--global-link-color);
+    color: #fff;
+  }
+}
+
+.pubs-year[hidden], .pub[hidden] { display: none; }
+
+.pubs-year__title {
+  margin-top: 1.5em;
+}
+
+.pub {
+  padding: 0.9em 0 0.9em 1em;
+  border-left: 3px solid var(--global-accent-light-color);
+  margin-bottom: 0.9em;
+  transition: $global-transition;
+
+  &:hover { border-left-color: var(--global-accent-color); }
+
+  p { margin: 0 0 0.3em !important; }
+}
+
+.pub__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
+}
+
+.pub__type {
+  flex-shrink: 0;
+  padding: 0.1em 0.55em;
+  border-radius: 4px;
+  font-size: 0.65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  position: relative;
+  top: -0.15em;
+
+  &--article  { background: var(--global-accent-bg-color); color: #3f6b3a; }
+  &--preprint { background: #f6efe9; color: #8a4426; }
+  &--review   { background: #eef1f6; color: #2b4a7a; }
+  &--software { background: #f1f1f1; color: #494e52; }
+  &--other    { background: #f1f1f1; color: #494e52; }
+}
+
+.pub__title {
+  margin: 0 0 0.25em !important;
+  font-size: 1em;
+  line-height: 1.35;
+
+  a { text-decoration: none !important; }
+  a:hover { text-decoration: underline !important; }
+}
+
+.pub__authors {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.pub__venue {
+  font-size: 0.85em;
+  color: var(--global-text-color-light);
+}
+
+.pub__btn {
+  display: inline-block;
+  margin-left: 0.8em;
+  padding: 0 0.6em;
+  border: 1px solid var(--global-link-underline-color);
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-decoration: none !important;
+
+  &:hover {
+    background: var(--global-link-color);
+    border-color: var(--global-link-color);
+    color: #fff;
+  }
+}
+
+.pub__summary {
+  font-size: 0.85em;
+
+  summary {
+    cursor: pointer;
+    color: var(--global-text-color-light);
+    width: max-content;
+
+    &:hover { color: var(--global-link-color); }
+  }
+
+  p {
+    margin: 0.4em 0 0 !important;
+    line-height: 1.5;
+  }
+}
+
+/* ==========================================================================
+   Academic activities page (/talks/)
+   ========================================================================== */
+
+.activity-list {
+  list-style: none;
+  margin: 0.5em 0 2em;
+  padding: 0;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: 8.5em 1fr;
+  gap: 0 1.2em;
+  padding: 0.6em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child { border-bottom: 0; }
+
+  @include breakpoint(max-width $small) {
+    grid-template-columns: 1fr;
+  }
+
+  p { margin: 0 !important; }
+}
+
+.activity__when {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  padding-top: 0.1em;
+}
+
+.activity__title {
+  line-height: 1.4;
+
+  a { font-weight: 600; text-decoration: none !important; }
+  a:hover { text-decoration: underline !important; }
+}
+
+.activity__role {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0.05em 0.55em;
+  border-radius: 4px;
+  background: var(--global-accent-bg-color);
+  color: #3f6b3a;
+  font-size: 0.68em;
+  font-weight: 600;
+  vertical-align: 0.15em;
+  white-space: nowrap;
+
+  &--upcoming { background: #f6efe9; color: var(--global-link-color); }
+}
+
+.activity__desc {
+  font-size: 0.85em;
+  color: var(--global-text-color-light);
+  line-height: 1.45;
+}

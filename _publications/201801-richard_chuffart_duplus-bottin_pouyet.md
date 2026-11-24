@@ -8,4 +8,5 @@ venue: ''
 citation: 'M. Richard, F. Chuffart, H. Duplus-Bottin, F. Pouyet <i>et al.</i>. <b>Assigning function to natural allelic variation via dynamic modeling of gene network induction</b>, <i>Molecular Systems Biology,</i> January 2018'
 year: '2018'
 type: 'Research Article'
+paperurl: 'https://doi.org/10.15252/msb.20177803'
 ---

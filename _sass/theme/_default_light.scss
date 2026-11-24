@@ -30,15 +30,20 @@ $sidebar-screen-min-width   : 1024px;
 :root {
     --global-base-color                 : #{$gray};
     --global-bg-color                   : #fff;
-    --global-footer-bg-color            : #f2f3f3;
+    --global-footer-bg-color            : #eef4ec;
     --global-border-color               : #{$lighter-gray};
     --global-dark-border-color          : #bdc1c4;
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #52adc8;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
+    /* Colors from the Bioinfo@APTIKAL logo */
+    --global-link-color                 : #8a4426;
+    --global-link-color-hover           : #5a2b19;
+    --global-link-color-visited         : #8a4426;
+    --global-link-underline-color       : rgba(138, 68, 38, 0.25);
+    --global-accent-color               : #8db384;  /* sage green */
+    --global-accent-light-color         : #c9dcc3;
+    --global-accent-bg-color            : #eef4ec;
     --global-masthead-link-color        : #{$dark-gray};
     --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
     --global-text-color                 : #{$dark-gray};

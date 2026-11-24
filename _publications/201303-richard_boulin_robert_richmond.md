@@ -9,6 +9,6 @@ citation: 'M. Richard, T. Boulin, V. J. P. Robert, J. E. Richmond <i>et al.</i>.
 year: '2013'
 Publisher: National Academy of Sciences
 Section: PNAS Plus
-paperurl: 'https://www-pnas-org.insb.bib.cnrs.fr/content/110/11/E1055'
+paperurl: 'https://doi.org/10.1073/pnas.1216154110'
 type: 'Research Article'
 ---

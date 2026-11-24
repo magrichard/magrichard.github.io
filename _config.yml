@@ -23,7 +23,7 @@ repository               : "magrichard/magrichard.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "mrichard_highres.jpg"
+  avatar           : "mrichard_avatar.jpg"
   name             : "Magali Richard"
   pronouns         : # example: "she/her"  
   bio              : "I am a CNRS researcher in bioinformatics, with a background in molecular biology, genetics, and computational biology. My research focuses on tumor heterogeneity, method development, and cancer biology, and I also promote collaborative science by organizing data challenges."
@@ -33,7 +33,8 @@ author:
   email            : "magali.richard@univ-grenoble-alpes.fr" 
 
   # Academic websites
-  academia         : https://cv.hal.science/magali-richard
+  hal              : "https://cv.hal.science/magali-richard"
+  academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.co.il/citations?hl=en&user=qy3usEoAAAAJ"
   inspire-hep      : # URL
@@ -122,7 +123,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -187,6 +188,11 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - scripts
+  - markdown_generator
+  - talkmap
+  - "*.ipynb"
+  - talkmap.py
   - tmp
   - vendor
 keep_files:

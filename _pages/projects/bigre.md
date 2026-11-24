@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "BIGRE"
 subtitle: "Scientific animation for BiGre - Computational Biology in Grenoble"
 coordinator: "M. Richard"
@@ -10,14 +11,12 @@ external_url: 'https://bi-gre.github.io/'
 period: '2026 – 2030'
 type: 'Project'
 image: /assets/images/projects/bigre2.png
+role: "coordinator"
+start: "2026-01"
+summary: "A Grenoble-wide network fostering computational methods for life sciences: causal inference, multimodal integration, genome annotation and spatial data."
 ---
 
-<p style="margin-bottom:1rem;">
-  <img src="{{ page.image }}" alt="BIGRE" style="max-width:100%;height:auto;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.08)"/>
-</p>
-
-
-<div style="color:#222;font-size:1rem;line-height:1.7;">
+<div class="project-description">
 The BIGRE (Computational Biology in Grenoble) network brings together researchers from multiple
 laboratories to address key methodological challenges in life sciences data analysis. Over the
 past two years, BIGRE has established a vibrant scientific community through seminars, coworking

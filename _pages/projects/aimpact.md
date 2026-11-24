@@ -1,23 +1,22 @@
 ---
+layout: project
 title: "AIMPACT"
 subtitle: "AI-driven molecular and spatial analysis of tumor cell plasticity"
-coordinator: "M. Richard"
+coordinator: "M. Richard and Y. Blum"
 agency: "ANR TSIA"            
 collection: projects
 permalink: /projects/aimpact/
-partners: 'S. Achard (LJK), Y. Blum (IGDR), A. Crombach (INRIA Lyon) & A. Petersen (BYU) '
+partners: 'S. Achard (LJK), A. Crombach (INRIA Lyon) & A. Petersen (BYU)'
 external_url: 'https://anr.fr/fr/detail/call/appel-a-projets-thematiques-specifiques-en-intelligence-artificielle-tsia-2025/'
 period: 'Jan. 2026 – Dec. 2029'
 type: 'Project'
 image: /assets/images/projects/aimpact.png
+role: "coordinator"
+start: "2026-01"
+summary: "AI-driven analysis of molecular and spatial data to understand how cancer cells switch between states and escape therapy."
 ---
 
-<p style="margin-bottom:1rem;">
-  <img src="{{ page.image }}" alt="AIMPACT" style="max-width:100%;height:auto;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.08)"/>
-</p>
-
-
-<div style="color:#222;font-size:1rem;line-height:1.7;">
+<div class="project-description">
 Tumor cell plasticity is the ability of cancer cells to dynamically reprogram their transcriptional
 programs in response to environmental cues. It is a key driver of therapy resistance and tumor
 evolution across multiple cancer types. The complexity of tumor cell plasticity presents a significant

@@ -1,0 +1,46 @@
+# Talks & events page (/talks/) (most recent first within each section).
+# Fields: name, url (optional), role, years (displayed as is), description, upcoming (optional: true)
+
+events:
+  - name: CompSysBio
+    url: https://project.inria.fr/compsysbio2025/
+    role: Organizing committee
+    years: 2021 · 2025 · 2027
+    description: Advanced lecture course on computational systems biology, Aussois, France
+  - name: COBICA
+    url: https://cobica2024.sciencesconf.org/
+    role: Chair
+    years: "2024"
+    description: Conference on Computational Biology of Cancer, Grenoble, France
+  - name: BIGRE seminar series
+    url: https://bi-gre.github.io/
+    role: Co-organizer
+    years: 2024 – present
+    description: Computational biology seminars and scientific animation in Grenoble
+  - name: COMETH
+    url: https://comteh-winter21.sciencesconf.org/
+    role: Chair
+    years: "2020"
+    description: From omics data to tumor heterogeneity quantification, Winter School, online
+
+challenges:
+  - name: HADACA4
+    role: Chair
+    years: "2027"
+    description: Ecosystem identification in spatial transcriptomics data, Aussois, France
+    upcoming: true
+  - name: HADACA3
+    url: https://hadaca3.sciencesconf.org/
+    role: Chair
+    years: "2024"
+    description: Multimodal data integration to quantify tumor heterogeneity in cancer, Aussois, France
+  - name: HADACA2
+    url: https://cancer-heterogeneity.github.io/data_challenge_2019.html
+    role: Chair
+    years: "2019"
+    description: Matrix factorization and deconvolution methods to quantify tumor heterogeneity in cancer research, Aussois, France
+  - name: HADACA1
+    url: https://cancer-heterogeneity.github.io/data_challenge_2018.html
+    role: Chair
+    years: "2018"
+    description: Statistical methods to quantify intra-tumour heterogeneity in cancer research, Aussois, France

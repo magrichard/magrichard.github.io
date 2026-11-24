@@ -8,4 +8,5 @@ venue: ''
 citation: 'M. DAlessandro, M. Richard, C. Stigloher, V. Gache <i>et al.</i>. <b>CRELD1 is an evolutionarily-conserved maturational enhancer of ionotropic acetylcholine receptors</b>, <i>eLife,</i> November 2018'
 year: '2018'
 type: 'Research Article'
+paperurl: 'https://doi.org/10.7554/eLife.39649'
 ---

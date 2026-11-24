@@ -7,7 +7,7 @@ permalink: /publication/202005-richard_decamps_chuffart_brambilla
 venue: ''
 citation: 'Richard M, Decamps C, Chuffart F, Brambilla E, Rousseaux S, Khochbin S, Jost D. <b>PenDA, a rank-based method for personalized differential analysis: Application to lung cancer</b>. PLoS Comput Biol. 2020 May 11;16(5):e1007869. doi: 10.1371/journal.pcbi.1007869. PMID: 32392248; PMCID: PMC7274464.'
 year: '2020'
-paperurl: 'https://journals-plos-org/ploscompbiol/article?id=10.1371/journal.pcbi.1007869'
+paperurl: 'https://doi.org/10.1371/journal.pcbi.1007869'
 type: 'Research Article'
 ---
 

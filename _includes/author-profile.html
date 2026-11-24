@@ -38,6 +38,9 @@
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
+      {% if author.hal %}
+        <li><a href="{{ author.hal }}"><i class="ai ai-hal ai-fw icon-pad-right" aria-hidden="true"></i>HAL</a></li>
+      {% endif %}
       {% if author.academia %}
         <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right" aria-hidden="true"></i>Academia</a></li>
       {% endif %}

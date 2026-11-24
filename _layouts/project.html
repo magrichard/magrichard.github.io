@@ -1,0 +1,26 @@
+---
+layout: single
+---
+{% include base_path %}
+<p class="project-back"><a href="{{ base_path }}/portfolio/">&larr; All projects</a></p>
+
+{% if page.subtitle %}<p class="page__lead project-subtitle">{{ page.subtitle }}</p>{% endif %}
+
+<div class="project-info">
+  {% if page.role %}<span class="project-badge project-badge--{{ page.role }}">{% if page.role == "coordinator" %}Coordinator{% else %}Partner{% endif %}</span>{% endif %}
+  <dl>
+    {% if page.coordinator %}<dt>Coordination</dt><dd>{{ page.coordinator }}</dd>{% endif %}
+    {% if page.agency %}<dt>Funding</dt><dd>{{ page.agency }}</dd>{% endif %}
+    {% if page.partners %}<dt>Partners</dt><dd>{{ page.partners }}</dd>{% endif %}
+    {% if page.period %}<dt>Period</dt><dd>{{ page.period }}</dd>{% endif %}
+    {% if page.external_url %}<dt>Website</dt><dd><a href="{{ page.external_url }}" target="_blank" rel="noopener">{{ page.external_url | split: "//" | last | split: "/" | first }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></dd>{% endif %}
+  </dl>
+</div>
+
+{% if page.image and page.image != "" %}
+<figure class="project-figure">
+  <img src="{{ base_path }}{{ page.image }}" alt="{{ page.title }} overview">
+</figure>
+{% endif %}
+
+{{ content }}
