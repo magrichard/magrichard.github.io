@@ -12,7 +12,7 @@ I am a bioinformatician with a background in molecular biology and genetics, spe
 
 ## Research interests
 
-- **Tumor heterogeneity and plasticity** — characterizing the cellular composition of tumors and the dynamic reprogramming of cancer cell states, with a focus on pancreatic cancer ([CauseHet]({{ site.baseurl }}/projects/causehet/), [AIMPACT]({{ site.baseurl }}/projects/aimpact/)).
+- **Tumor heterogeneity and plasticity** — characterizing the cellular composition of tumors, their spatial organization, and the dynamic reprogramming of cell states, with a focus on pancreatic cancer ([CauseHet]({{ site.baseurl }}/projects/causehet/), [AIMPACT]({{ site.baseurl }}/projects/aimpact/)).
 - **Deconvolution and multi-omics integration** — statistical methods to infer cellular heterogeneity from bulk transcriptomic and DNA methylation data ([M4DI]({{ site.baseurl }}/projects/m4di/)).
 - **High-dimensional mediation and causal inference** — identifying molecular mediators linking exposures to clinical outcomes, including survival (project THEMA).
 - **Data challenges and benchmarking** — designing scientific competitions to benchmark computational methods in life sciences ([SCALER]({{ site.baseurl }}/projects/scaler/), HADACA competitions serie).
